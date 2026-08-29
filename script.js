@@ -15,9 +15,12 @@ navigation?.addEventListener('click', (event) => {
 });
 
 const frames = [...document.querySelectorAll('.reel-frame')];
+const reel = document.querySelector('.work-reel');
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 let frameIndex = 0;
 let reelTimer;
+let reelVisible = true;
+let touchStartX = 0;
 
 function showNextFrame() {
   frames[frameIndex]?.classList.remove('active');
@@ -27,10 +30,36 @@ function showNextFrame() {
 
 function startReel() {
   clearInterval(reelTimer);
-  if (!reducedMotion.matches && !document.hidden && frames.length > 1) {
+  if (!reducedMotion.matches && !document.hidden && reelVisible && frames.length > 1) {
     reelTimer = setInterval(showNextFrame, 5000);
   }
 }
+
+function showPreviousFrame() {
+  frames[frameIndex]?.classList.remove('active');
+  frameIndex = (frameIndex - 1 + frames.length) % frames.length;
+  frames[frameIndex]?.classList.add('active');
+}
+
+if ('IntersectionObserver' in window && reel) {
+  const reelObserver = new IntersectionObserver(([entry]) => {
+    reelVisible = entry.isIntersecting;
+    startReel();
+  }, { threshold: 0.15 });
+  reelObserver.observe(reel);
+}
+
+reel?.addEventListener('touchstart', (event) => {
+  touchStartX = event.changedTouches[0].clientX;
+}, { passive: true });
+
+reel?.addEventListener('touchend', (event) => {
+  if (reducedMotion.matches) return;
+  const distance = event.changedTouches[0].clientX - touchStartX;
+  if (Math.abs(distance) < 45) return;
+  distance < 0 ? showNextFrame() : showPreviousFrame();
+  startReel();
+}, { passive: true });
 
 document.addEventListener('visibilitychange', startReel);
 reducedMotion.addEventListener?.('change', startReel);

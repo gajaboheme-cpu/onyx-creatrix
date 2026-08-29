@@ -48,3 +48,59 @@
 
 @media(max-width:980px){.hero{background-position:68% center}.hero-reel{margin:0 1.5rem 3rem}.site-footer{grid-template-columns:1.5fr .7fr 1fr}.footer-brand{grid-column:1/-1}.footer-wordmark{width:18rem!important}}
 @media(max-width:620px){.brand{width:8.7rem}.hero{background-image:linear-gradient(rgba(10,10,9,.91),rgba(10,10,9,.82)),url('assets/onyx-stone-background.jpg');background-position:70% center}.hero-reel{margin:0}.manifesto{display:block}.manifesto .section-index{margin-bottom:2.5rem}.intro-notes{grid-template-columns:1fr;margin-top:3rem}.intro-notes .intro-close{grid-column:auto}.site-footer{grid-template-columns:1fr 1fr;padding-top:5rem;gap:3.5rem 2rem}.footer-brand{grid-column:1/-1}.footer-wordmark{width:14rem!important;margin-bottom:2.5rem}.footer-brand p{font-size:2.5rem}.footer-bottom{grid-template-columns:auto 1fr;gap:1rem}.footer-bottom p:last-child{grid-column:1/-1;text-align:left}.footer-contact{min-width:0}.footer-contact a{overflow-wrap:anywhere}}
+
+/* Refinement pass 3 */
+.eyebrow,.section-index,.project-no{font-size:.78rem;letter-spacing:.15em}
+.hero,.site-footer{background-image:linear-gradient(90deg,rgba(10,10,9,.93) 0%,rgba(10,10,9,.82) 45%,rgba(10,10,9,.36) 100%),url('assets/onyx-stone-background.jpg?v=20260828-3')}
+.experience-list article{grid-template-columns:4rem minmax(18rem,1.05fr) 1.4fr;gap:2.5rem;padding:3.4rem 0}
+.experience-list h3{font-size:clamp(2.5rem,3.5vw,4.4rem)}
+.experience-list article>div{gap:clamp(2rem,4vw,4.5rem);align-items:start}
+.experience-list p{font-size:1.08rem;line-height:1.65}
+.experience-list .detail{font-size:1rem}
+.project-copy>p:not(.meta,.focus,.project-no){font-size:1.08rem;line-height:1.7}
+.meta{font-size:.74rem}
+.approach-dark{background-color:var(--onyx);background-image:linear-gradient(90deg,rgba(12,11,10,.96),rgba(12,11,10,.67)),url('assets/onyx-stone-background.jpg?v=20260828-3');background-size:cover;background-position:center right;min-height:44rem}
+.approach-dark h2{margin-top:7rem}
+.approach-copy{gap:1.25rem}
+.approach-copy .lead{font-size:clamp(2rem,3vw,3.6rem);margin:0 0 1rem}
+.approach-copy>p{font-size:1.1rem;line-height:1.7;margin:0}
+.approach-conclusion{font:400 clamp(2rem,3vw,3.2rem)/1.2 var(--serif);padding-top:2.5rem!important;margin-top:1.5rem!important;border-top:1px solid #aca295}
+.why{padding-top:10rem;padding-bottom:10rem}
+.why-grid{grid-template-columns:1.25fr .75fr;align-items:start}
+.why-copy .first-experience{font:400 clamp(2rem,2.7vw,3.2rem)/1.2 var(--serif);margin-bottom:2.5rem}
+.why-copy .questions{font-size:1.2rem;line-height:1.9;padding:2rem 0;border-top:1px solid #b8aea1;border-bottom:1px solid #b8aea1}
+.form-wrap{background:#e8e0d5}
+.field{margin-bottom:1.85rem}
+.field label{font-size:.76rem;letter-spacing:.1em}
+.field input,.field select{border:1px solid #aaa093;padding:.85rem .75rem;background:rgba(255,255,255,.18)}
+.field textarea{background:rgba(255,255,255,.18)}
+.submit-button{min-height:3.8rem;background:#151311;border:1px solid #151311}
+.submit-button:hover{background:#493f36}
+.form-status{font-size:.86rem}
+.site-footer{padding-top:4.5rem;gap:clamp(2.5rem,5vw,6rem)}
+.footer-brand p{font-size:clamp(2rem,3vw,3.6rem)}
+.footer-wordmark{margin-bottom:2rem}
+.footer-bottom{padding-top:2.5rem;margin-top:0}
+
+@media(max-width:980px){.experience-list article{grid-template-columns:3rem 1fr}.experience-list article>div{grid-column:2}.why-grid{grid-template-columns:1fr}.approach-dark{min-height:34rem}}
+@media(max-width:620px){.hero,.site-footer{background-image:linear-gradient(rgba(10,10,9,.91),rgba(10,10,9,.82)),url('assets/onyx-stone-background.jpg?v=20260828-3')}.experience-list article{grid-template-columns:2rem 1fr;padding:2.7rem 0}.experience-list h3{font-size:2.65rem}.experience-list article>div{gap:.8rem}.approach-dark{min-height:26rem}.why{padding-top:6.5rem;padding-bottom:6.5rem}.site-footer{padding-top:4rem;padding-bottom:2rem;gap:2.5rem 1.5rem}}
+
+/* Hero and Selected Work reel refinement */
+.hero{grid-template-columns:minmax(0,1.05fr) minmax(24rem,.95fr);background-image:linear-gradient(90deg,rgba(7,7,7,.96) 0%,rgba(10,10,9,.83) 50%,rgba(10,10,9,.22) 100%),url('assets/onyx-stone-background.jpg?v=20260828-4')}
+.hero-copy{max-width:62rem;padding-top:clamp(10rem,16vh,13rem);padding-bottom:7rem}
+.hero h1{max-width:54rem;font-size:clamp(4rem,5.7vw,6.8rem)}
+.hero-art{position:relative;min-height:calc(100svh - 6rem);margin-top:6rem;overflow:hidden;border-left:1px solid rgba(240,236,228,.16)}
+.hero-art::before{content:"";position:absolute;inset:9% 8% 12% 18%;border-top:1px solid rgba(165,139,106,.42);border-right:1px solid rgba(240,236,228,.12)}
+.hero-art .hero-monogram{top:auto;right:-13%;bottom:-7%;width:min(34vw,31rem);opacity:.13;filter:invert(1) sepia(.15)}
+.hero-rule{position:absolute;top:32%;left:18%;width:34%;height:1px;background:rgba(165,139,106,.62)}
+.hero-art>p{position:absolute;right:8%;top:9%;margin:0;text-align:right;font:400 .72rem/1.7 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:#d7cec2}
+.hero-art>p span{font-size:.58rem;color:var(--stone)}
+.work-head{margin-bottom:5rem}
+.work-reel{position:relative;height:min(68vw,52rem);max-width:86rem;margin:0 auto 11rem;overflow:hidden;background:#151311;border:1px solid rgba(240,236,228,.17);box-shadow:0 2.5rem 6rem rgba(0,0,0,.24);touch-action:pan-y}
+.work-reel .reel-frame img{object-position:top center;filter:saturate(.76) contrast(1.04) brightness(.82)}
+.work-reel .reel-frame::after{background:linear-gradient(180deg,transparent 60%,rgba(12,11,10,.9))}
+.work-reel .reel-frame span{bottom:2.5rem;left:2.5rem;right:2.5rem;font-size:clamp(1.25rem,2vw,2rem)}
+.work-reel .reel-frame b{align-self:center}
+
+@media(max-width:980px){.hero{grid-template-columns:1fr;min-height:100svh}.hero-copy{position:relative;z-index:2;min-height:100svh;padding-bottom:6rem}.hero-art{position:absolute;inset:5rem 0 0 45%;min-height:0;margin:0;border-left:0;opacity:.7}.hero-art .hero-monogram{width:23rem;right:-10rem;bottom:-3rem}.hero-art>p{right:1.5rem}.work-reel{height:min(100vw,46rem);margin-bottom:8rem}}
+@media(max-width:620px){.hero{background-image:linear-gradient(135deg,rgba(7,7,7,.98),rgba(10,10,9,.78)),url('assets/onyx-stone-background.jpg?v=20260828-4');background-position:65% center}.hero-copy{min-height:100svh;padding-top:8.5rem;padding-bottom:4rem}.hero h1{font-size:clamp(3.35rem,15vw,4.8rem)}.hero-art{inset:5rem 0 0 58%;opacity:.42}.hero-art::before,.hero-rule,.hero-art>p{display:none}.hero-art .hero-monogram{width:15rem;right:-7rem;bottom:2rem}.work-head{margin-bottom:3.5rem}.work-reel{height:120vw;max-height:38rem;margin:0 -1.25rem 7rem;border-left:0;border-right:0}.work-reel .reel-frame span{left:1.25rem;right:1.25rem;bottom:1.5rem}}
