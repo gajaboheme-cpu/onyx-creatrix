@@ -69,6 +69,18 @@ const form = document.querySelector('#project-form');
 const statusMessage = document.querySelector('.form-status');
 const submitButton = form?.querySelector('button[type="submit"]');
 const successMessage = document.querySelector('.success-message');
+const bookingCalendar = document.querySelector('.booking-calendar');
+const bookingFrame = bookingCalendar?.querySelector('iframe');
+const bookingTriggers = document.querySelectorAll('[data-show-booking]');
+
+function showBookingCalendar() {
+  if (!bookingCalendar || !bookingFrame) return;
+  bookingCalendar.hidden = false;
+  if (!bookingFrame.src) bookingFrame.src = bookingFrame.dataset.src;
+  bookingCalendar.scrollIntoView({ behavior: reducedMotion.matches ? 'auto' : 'smooth', block: 'start' });
+}
+
+bookingTriggers.forEach((trigger) => trigger.addEventListener('click', showBookingCalendar));
 
 function showFieldError(field, message) {
   const error = document.querySelector(`#${field.id}-error`);
@@ -118,6 +130,7 @@ form?.addEventListener('submit', async (event) => {
     });
     if (!response.ok) throw new Error('Submission failed');
     form.hidden = true;
+    document.querySelector('.returning-visitor').hidden = true;
     successMessage.hidden = false;
     successMessage.focus();
   } catch (error) {

@@ -104,3 +104,23 @@
 
 @media(max-width:980px){.hero{grid-template-columns:1fr;min-height:100svh}.hero-copy{position:relative;z-index:2;min-height:100svh;padding-bottom:6rem}.hero-art{position:absolute;inset:5rem 0 0 45%;min-height:0;margin:0;border-left:0;opacity:.7}.hero-art .hero-monogram{width:23rem;right:-10rem;bottom:-3rem}.hero-art>p{right:1.5rem}.work-reel{height:min(100vw,46rem);margin-bottom:8rem}}
 @media(max-width:620px){.hero{background-image:linear-gradient(135deg,rgba(7,7,7,.98),rgba(10,10,9,.78)),url('assets/onyx-stone-background.jpg?v=20260828-4');background-position:65% center}.hero-copy{min-height:100svh;padding-top:8.5rem;padding-bottom:4rem}.hero h1{font-size:clamp(3.35rem,15vw,4.8rem)}.hero-art{inset:5rem 0 0 58%;opacity:.42}.hero-art::before,.hero-rule,.hero-art>p{display:none}.hero-art .hero-monogram{width:15rem;right:-7rem;bottom:2rem}.work-head{margin-bottom:3.5rem}.work-reel{height:120vw;max-height:38rem;margin:0 -1.25rem 7rem;border-left:0;border-right:0}.work-reel .reel-frame span{left:1.25rem;right:1.25rem;bottom:1.5rem}}
+
+/* Project Call booking flow */
+.returning-visitor{margin:2.2rem 0 0;color:#665e56;font-size:.86rem;text-align:center}
+.booking-text-link{appearance:none;border:0;border-bottom:1px solid #948570;background:transparent;color:var(--onyx);padding:.12rem 0;cursor:pointer}
+.booking-text-link:hover{border-color:var(--onyx)}
+.success-message{padding:3rem 0 1rem;max-width:45rem}
+.success-message h3,.booking-calendar-head h3{font:400 clamp(3rem,5vw,5rem)/1 var(--serif);margin:1.5rem 0 2rem}
+.success-message>p:not(.eyebrow){font-size:1.06rem;line-height:1.7;max-width:42rem}
+.booking-button{margin-top:1.5rem;background:var(--onyx);color:var(--ivory);cursor:pointer;gap:2rem}
+.booking-button:hover{background:#493f36}
+.booking-calendar{scroll-margin-top:2rem;margin-top:4rem;padding-top:3.5rem;border-top:1px solid #aaa093}
+.booking-calendar-head{max-width:44rem;margin-bottom:2.5rem}
+.booking-calendar-head h3{font-size:clamp(2.5rem,4vw,4.4rem);margin-bottom:0}
+.booking-calendar iframe{display:block;width:100%;height:780px;border:0;background:#f5f1ea;color-scheme:light}
+.booking-fallback{font-size:.78rem;color:#665e56;margin:1rem 0 0}
+.booking-fallback a{border-bottom:1px solid #948570}
+
+@media(max-width:620px){.success-message{padding-top:2rem}.success-message h3{font-size:3.2rem}.booking-button{width:100%;justify-content:space-between}.booking-calendar{margin-top:3rem;padding-top:2.5rem}.booking-calendar iframe{height:860px;margin:0}.returning-visitor{text-align:left;line-height:1.7}}
+
+.submit-button,.booking-button{justify-content:center}
