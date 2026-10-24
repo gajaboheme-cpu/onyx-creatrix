@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="qpp-frame-art qpp-frame-art--ornate" viewBox="0 0 600 800" preserveAspectRatio="none" fill="none" style="color:#B99A67">
+    <style>.qpp-frame-art path,.qpp-frame-art rect{vector-effect:non-scaling-stroke}</style>
+    
+    <g stroke="currentColor" stroke-width="1.25" vector-effect="non-scaling-stroke">
+      <rect class="qpp-frame-outer" x="18" y="18" width="564" height="764"/>
+      <path class="qpp-frame-arch" d="M 78 734 V 218 C 78 164 112 133 160 133 C 167 112 187 102 211 105 C 217 85 235 78 255 74 C 276 70 292 54 300 39 C 308 54 324 70 345 74 C 365 78 383 85 389 105 C 413 102 433 112 440 133 C 488 133 522 164 522 218 V 734 Z"/>
+      <path class="qpp-frame-detail" opacity=".5" d="M 28 65 V 28 H 65 M 535 28 H 572 V 65 M 572 735 V 772 H 535 M 65 772 H 28 V 735"/>
+      <g class="qpp-frame-engraving" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 36 126 C 34 106 41 91 48 78 C 57 60 60 44 48 30 M 48 78 C 63 79 75 69 81 55 M 42 97 C 30 89 29 76 33 66"/>
+    <path d="M 48 78 C 36 76 32 66 35 55 C 45 58 51 66 48 78 Z M 53 66 C 53 53 60 47 70 45 C 71 56 65 64 53 66 Z M 42 98 C 50 86 60 85 67 88 C 63 99 53 102 42 98 Z M 48 44 C 36 42 32 35 34 27 C 43 28 49 34 48 44 Z"/>
+    <path d="M 81 55 C 83 47 91 45 95 50 C 103 49 107 57 102 62 C 104 70 96 75 90 71 C 82 74 77 67 81 62 C 76 59 77 56 81 55 Z M 85 57 C 90 51 98 55 97 61 C 96 68 87 69 85 63 C 83 59 88 56 92 59 C 94 62 91 65 88 63"/>
+    <path d="M 94 73 C 109 77 117 75 126 69 M 108 76 C 109 65 116 60 124 61 C 125 70 119 76 108 76 Z"/>
+  </g><g transform="translate(600 800) rotate(180)"><g class="qpp-frame-engraving" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 36 126 C 34 106 41 91 48 78 C 57 60 60 44 48 30 M 48 78 C 63 79 75 69 81 55 M 42 97 C 30 89 29 76 33 66"/>
+    <path d="M 48 78 C 36 76 32 66 35 55 C 45 58 51 66 48 78 Z M 53 66 C 53 53 60 47 70 45 C 71 56 65 64 53 66 Z M 42 98 C 50 86 60 85 67 88 C 63 99 53 102 42 98 Z M 48 44 C 36 42 32 35 34 27 C 43 28 49 34 48 44 Z"/>
+    <path d="M 81 55 C 83 47 91 45 95 50 C 103 49 107 57 102 62 C 104 70 96 75 90 71 C 82 74 77 67 81 62 C 76 59 77 56 81 55 Z M 85 57 C 90 51 98 55 97 61 C 96 68 87 69 85 63 C 83 59 88 56 92 59 C 94 62 91 65 88 63"/>
+    <path d="M 94 73 C 109 77 117 75 126 69 M 108 76 C 109 65 116 60 124 61 C 125 70 119 76 108 76 Z"/>
+  </g></g>
+    </g>
+  </svg>
